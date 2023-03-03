@@ -8,13 +8,10 @@ from utils.service_user import add_new_user, update_user_id, get_user_id, all_us
 
 view_user = APIRouter()
 
-fake_db = []
-
 
 @view_user.get('/users', response_model=list[User], tags=["users"])
 async def find_all_users():
     try:
-        # print(list(conn.local.user.find()))
         result = all_user()
         return result
     except Exception as e:
