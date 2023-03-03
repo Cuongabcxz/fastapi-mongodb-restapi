@@ -8,8 +8,8 @@
                  source fastapi-mongodb-restapi/bin/active
                  uvicorn main:app --reload
   + Chạy Redis trên Ubuntu:
-       sudo service redis-server start
-       redis-cli
+                 sudo service redis-server start
+                 redis-cli
  
 # Công cụ sử dụng:
          Ubuntu 2204.1.8
